@@ -1,14 +1,17 @@
 "use client";
 
 import * as React from "react";
+
 import {
-  CalendarIcon,
-  EnvelopeClosedIcon,
-  FaceIcon,
-  GearIcon,
-  PersonIcon,
-  RocketIcon,
-} from "@radix-ui/react-icons";
+  FaGithub,
+  FaCodepen,
+  FaFile,
+  FaHome,
+  FaUser,
+  FaBook,
+  FaTools,
+} from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
 
 import {
   CommandDialog,
@@ -18,7 +21,6 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-  CommandShortcut,
 } from "@/components/ui/command";
 import Link from "next/link";
 
@@ -48,38 +50,49 @@ export function CommandDialogDemo() {
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
-          <CommandGroup heading="Suggestions">
-            <CommandItem>
-              <CalendarIcon className="mr-2 h-4 w-4" />
-              <span>Calendar</span>
-            </CommandItem>
-            <Link href={"https://www.youtube.com/watch?v=NpyiSEO7a_Y&t=4599s"}>
-              <CommandItem>
-                <FaceIcon className="mr-2 h-4 w-4" />
-                Search Emoji
+          <CommandGroup heading="Navigation">
+            <Link href="/" className="">
+              <CommandItem className="">
+                <FaHome className="mr-2 h-4 w-4" />
+                <span>Home</span>
               </CommandItem>
             </Link>
-            <CommandItem>
-              <RocketIcon className="mr-2 h-4 w-4" />
-              <span>Launch</span>
-            </CommandItem>
+            <Link href="/about">
+              <CommandItem>
+                <FaUser className="mr-2 h-4 w-4" />
+                About
+              </CommandItem>
+            </Link>
+            <Link href="/projects">
+              <CommandItem>
+                <FaBook className="mr-2 h-4 w-4 " />
+                <span>Projects</span>
+              </CommandItem>
+            </Link>
+            <Link href="/tools">
+              <CommandItem>
+                <FaTools className="mr-2 h-4 w-4 " />
+                <span>Tools</span>
+              </CommandItem>
+            </Link>
           </CommandGroup>
           <CommandSeparator />
-          <CommandGroup heading="Settings">
+          <CommandGroup heading="Socials">
             <CommandItem>
-              <PersonIcon className="mr-2 h-4 w-4" />
-              <span>Profile</span>
-              <CommandShortcut>⌘P</CommandShortcut>
+              <FaGithub className="mr-2 h-4 w-4" />
+              <span>Github</span>
             </CommandItem>
             <CommandItem>
-              <EnvelopeClosedIcon className="mr-2 h-4 w-4" />
+              <FaCodepen className="mr-2 h-4 w-4" />
+              <span>Codepen</span>
+            </CommandItem>
+            <CommandItem>
+              <IoMail className="mr-2 h-4 w-4" />
               <span>Mail</span>
-              <CommandShortcut>⌘B</CommandShortcut>
             </CommandItem>
             <CommandItem>
-              <GearIcon className="mr-2 h-4 w-4" />
-              <span>Settings</span>
-              <CommandShortcut>⌘S</CommandShortcut>
+              <FaFile className="mr-2 h-4 w-4" />
+              <span>CV</span>
             </CommandItem>
           </CommandGroup>
         </CommandList>
