@@ -3,11 +3,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "@/components/mode-toggle";
-import { CommandDialogDemo } from "@/components/command-box";
+
 import { FloatingNavDemo } from "@/components/FloatingNavbar";
 import { Footer } from "@/components/Footer";
-const inter = Inter({ subsets: ["latin"] });
+import NavApp from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "ST Portfolio",
@@ -28,12 +27,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {" "}
+          <NavApp />
           <FloatingNavDemo />
-          <div className="flex gap-2">
-            <ModeToggle />
-            <CommandDialogDemo />
-          </div>
           <div className="">{children}</div>
           <Footer />
         </ThemeProvider>

@@ -65,7 +65,7 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              "relative font-text font-extrabold dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-blue-700 hover:text-blue-700"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>

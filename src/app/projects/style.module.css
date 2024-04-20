@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+
+/* Page style */
+.main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ProjectCard style */
+
+.project {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px 50px 100px; /* to be modified for smaller devices */
+  border-top: 1px solid rgb(201, 201, 201);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    margin-top: 1rem;
+  }
+  .project {
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 600px) {
+  /* CSS rules for this interval */
+  .project {
+    padding: 10px;
+  }
+}
+
+.project:last-of-type {
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.project:hover {
+  opacity: 0.5;
+}
+
+.project:hover h2 {
+  transform: translateX(-10px);
+}
+
+.project:hover p {
+  transform: translateX(10px);
+}
+
+.project h2 {
+  font-size: 60px;
+  margin: 0px;
+  transition: all 0.4s;
+}
+
+.project p {
+  transition: all 0.4s;
+}
+
+/* Modal Style */
+
+.modalContainer {
+  height: 350px;
+  width: 400px;
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalSlider {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.modal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal img {
+  height: auto;
+}
+
+.cursor,
+.cursorLabel {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #455ce9;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 300;
+  pointer-events: none;
+}
+
+.cursorLabel {
+  background-color: transparent;
+}

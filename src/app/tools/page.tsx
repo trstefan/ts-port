@@ -62,8 +62,10 @@ const tools = [
 export default function Tools() {
   return (
     <div className="p-[2rem]">
-      <h1 className="text-2xl font-bold">Tools</h1>
-      <h2>Some of the technologies I use — and often rely on.</h2>
+      <h1 className="text-2xl font-bold mb-[1.5rem] font-header">Tools</h1>
+      <h2 className="text-xl font-semibold mb-[1rem] font-text">
+        Some of the technologies I use — and often rely on.
+      </h2>
       <div className="w-[80%] flex flex-col gap-4">
         {tools.map((tool) => {
           return (
@@ -75,12 +77,12 @@ export default function Tools() {
                 backgroundColor: "#ade8f4",
                 style: { cursor: "pointer" },
               }}
-              initial={{ backgroundColor: "#f2e9e4" }}
+              initial={{ backgroundColor: "#EDF1FA" }}
             >
               <img src={`/tools/${tool.src}`} alt="" width={100} height={100} />
               <div className="text-black">
-                <h4>{tool.name}</h4>
-                <p>{tool.description}</p>
+                <h4 className="font-bold font-header text-xl">{tool.name}</h4>
+                <p className="font-semibold font-text">{tool.description}</p>
               </div>
             </motion.div>
           );

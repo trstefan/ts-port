@@ -1,36 +1,41 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
-export const About = () => {
+const About = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div className="p-[2rem]">
-      <h1 className="text-4xl font-bold">About</h1>
-
-      <div className="flex mb-2">
+    <div
+      ref={ref}
+      className="md:px-[10rem] p-[2rem] bg-[#EDF1FA] dark:bg-[#1D2333]"
+    >
+      <h1 className="text-4xl font-bold mb-[2rem] font-header">About</h1>
+      <div className="flex flex-col md:flex-row mb-2 text-[#04052F] dark:text-[#E8E8FD] font-bold font-text">
         <div>
           <p>
-            I've been building UIs for container management tools since 2013. I
-            started hacking and building web services around Docker as soon as
-            it came out. My experiments eventually got me my first job out of
-            college at Tutum. I moved from Eastern France to Madrid in Spain to
-            start my career in software engineering and shortly after I got the
-            opportunity to move to San Francisco, CA, after the acquisition of
-            Tutum by Docker.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            quis fuga sunt dignissimos delectus atque accusantium optio
+            asperiores vel illo facilis excepturi est, nostrum corporis sint id
+            placeat quos recusandae ex commodi itaque molestias veritatis?
+            Doloremque quaerat sed nihil, enim odio pariatur, tempora molestias
+            laudantium quod, soluta harum quos vitae.
           </p>
         </div>
         <div>
-          <p>
-            I've been building UIs for container management tools since 2013. I
-            started hacking and building web services around Docker as soon as
-            it came out. My experiments eventually got me my first job out of
-            college at Tutum. I moved from Eastern France to Madrid in Spain to
-            start my career in software engineering and shortly after I got the
-            opportunity to move to San Francisco, CA, after the acquisition of
-            Tutum by Docker.
+          <p className="mt-[1rem] md:m-0">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
+            veritatis illo, veniam explicabo nostrum tempore nam iure dicta
+            vitae debitis iusto? Quia repellat tempora facilis quasi similique
+            ab possimus sed totam, eius architecto quas suscipit delectus
+            laborum modi, ex enim assumenda molestiae, nostrum obcaecati. Modi
+            maiores ipsum vero eaque cupiditate.
           </p>
         </div>
       </div>
-      <Button> View more</Button>
+      <Link href="/about">
+        <Button> View more</Button>
+      </Link>
     </div>
   );
-};
+});
+
+export default About;
