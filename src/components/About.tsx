@@ -38,4 +38,6 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
   );
 });
 
+About.displayName = "About";
+
 export default About;

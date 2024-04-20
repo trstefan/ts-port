@@ -22,4 +22,6 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
   );
 });
 
+Contact.displayName = "Contact";
+
 export default Contact;
