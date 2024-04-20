@@ -112,4 +112,7 @@ const Work = forwardRef<HTMLDivElement>((props, ref) => {
     </section>
   );
 });
+
+Work.displayName = "Work";
+
 export default Work;
