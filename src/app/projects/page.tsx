@@ -137,7 +137,7 @@ const Modal: React.FC<{
                 style={{ backgroundColor: color }}
                 key={`modal_${index}`}
               >
-                <Image src={src} width={300} height={200} alt="image" />
+                <img src={src} width={300} height={200} alt="image" />
               </div>
             );
           })}
