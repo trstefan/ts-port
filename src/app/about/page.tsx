@@ -18,7 +18,7 @@ export default function About() {
         <p className="mb-[1rem] font-semibold font-text">
           The internet is my playground, and I love building websites and apps
           that are born and live there. I specialize in creating the visual side
-          of things and making sure it's easy and enjoyable to use, but I am
+          of things and making sure it is easy and enjoyable to use, but I am
           also versed in some back-end functionalities to make sure everything
           runs smoothly.
         </p>
@@ -56,7 +56,7 @@ export default function About() {
         </p>
         <p className="font-semibold font-text">
           Offline, I am into lifting weights and calisthenics. For quite a long
-          time, I've been working on becoming a master chef, of course, in my
+          time, I have been working on becoming a master chef, of course, in my
           own kitchen. I enjoy a good walk in nature and petting my cats. Video
           games, I like those too.
         </p>
