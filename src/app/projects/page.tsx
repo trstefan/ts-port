@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
+import Image from "next/image";
 
 import styles from "./style.module.css";
 
@@ -136,7 +137,7 @@ const Modal: React.FC<{
                 style={{ backgroundColor: color }}
                 key={`modal_${index}`}
               >
-                <img src={src} width={300} height={200} alt="image" />
+                <Image src={src} width={300} height={200} alt="image" />
               </div>
             );
           })}

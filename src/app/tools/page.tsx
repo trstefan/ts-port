@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 const tools = [
   {
     name: "Figma",
@@ -79,7 +79,12 @@ export default function Tools() {
               }}
               initial={{ backgroundColor: "#EDF1FA" }}
             >
-              <img src={`/tools/${tool.src}`} alt="" width={100} height={100} />
+              <Image
+                src={`/tools/${tool.src}`}
+                alt=""
+                width={100}
+                height={100}
+              />
               <div className="text-black">
                 <h4 className="font-bold font-header text-xl">{tool.name}</h4>
                 <p className="font-semibold font-text">{tool.description}</p>

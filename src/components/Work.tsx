@@ -88,6 +88,8 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   );
 };
 
+ProjectCard.displayName = "ProjectCard";
+
 const Work = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <section>
