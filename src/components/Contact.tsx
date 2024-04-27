@@ -1,23 +1,44 @@
+import Link from "next/link";
 import React, { forwardRef } from "react";
-import { FiArrowDownLeft } from "react-icons/fi";
 import { FaGithub, FaCodepen, FaAddressBook } from "react-icons/fa";
-import { IoMail } from "react-icons/io5";
 
 const Contact = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div ref={ref} className="md:px-[10rem] p-[2rem]">
       <h1 className="text-4xl font-bold mb-[2rem] font-header">Contact</h1>
       <p className="text-2xl font-semibold font-text">Want to get in touch?</p>
-      <div className="flex items-center text-2xl mt-[1rem] font-semibold font-text">
-        <p>Write me at email or you can find me on the following platforms</p>
-        <FiArrowDownLeft className="ml-2 text-black dark:text-white text-4xl hidden md:block" />
+      <div className="flex items-center text-2xl mt-4 font-semibold font-text">
+        <p>
+          {" "}
+          I&apos;m currently looking for opportunies to learn and grow in the
+          web development industry, my inbox is always open! If you have any
+          questions or just want to say hello, please feel free to write me{" "}
+          <span className="text-blue-700 hover:text-blue-600">
+            <Link href="mailto:stefantraciu20@gmail.com">
+              {" "}
+              stefantraciu20@gmail.com
+            </Link>
+          </span>
+        </p>
       </div>
-      <span className="flex gap-2 mt-[1rem]">
-        <FaGithub className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 text-4xl	dark:hover:text-blue-700" />
-        <FaCodepen className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 text-4xl	dark:hover:text-blue-700" />
-        <IoMail className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 text-4xl	dark:hover:text-blue-700" />
-        <FaAddressBook className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 text-4xl	dark:hover:text-blue-700" />
-      </span>
+      <p className="flex flex-col items-start md:flex-row md:flex md:items-center text-2xl font-semibold font-text mt-4">
+        {" "}
+        Or follow me here
+        <span className="flex gap-2 ml-0 mt-4  md:ml-8 md:mt-0">
+          <Link href="https://github.com/trstefan">
+            {" "}
+            <FaGithub className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 text-2xl	dark:hover:text-blue-700" />
+          </Link>
+          <Link href="https://codepen.io/trstefan">
+            {" "}
+            <FaCodepen className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 text-2xl	dark:hover:text-blue-700" />
+          </Link>
+          <Link href="https://read.cv/trstef">
+            {" "}
+            <FaAddressBook className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 text-2xl	dark:hover:text-blue-700" />
+          </Link>
+        </span>
+      </p>
     </div>
   );
 });

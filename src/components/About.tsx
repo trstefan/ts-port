@@ -8,26 +8,26 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
       ref={ref}
       className="md:px-[10rem] p-[2rem] bg-[#EDF1FA] dark:bg-[#1D2333]"
     >
-      <h1 className="text-4xl font-bold mb-[2rem] font-header">About</h1>
-      <div className="flex flex-col md:flex-row mb-2 text-[#04052F] dark:text-[#E8E8FD] font-bold font-text">
+      <h1 className="text-4xl font-bold mb-[2rem] font-header">My Story</h1>
+      <div className="flex flex-col md:flex-row gap-4 mb-2 text-[#04052F] dark:text-[#E8E8FD] font-bold font-text">
         <div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            quis fuga sunt dignissimos delectus atque accusantium optio
-            asperiores vel illo facilis excepturi est, nostrum corporis sint id
-            placeat quos recusandae ex commodi itaque molestias veritatis?
-            Doloremque quaerat sed nihil, enim odio pariatur, tempora molestias
-            laudantium quod, soluta harum quos vitae.
+            Hello! I&apos;m Stefan, but you can call me Stef and I have a
+            passion for crafting digital experiences on the web. My journey into
+            web development began during high school when I designed my first
+            website using HTML & CSS. Presently, my preferred toolkit comprises
+            Next.js with React, although I remain flexible and eager to acquaint
+            myself with a diverse array of technologies. My main focus is to
+            transform complex challenges into user-friendly and accessible
+            designs.
           </p>
         </div>
         <div>
-          <p className="mt-[1rem] md:m-0">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-            veritatis illo, veniam explicabo nostrum tempore nam iure dicta
-            vitae debitis iusto? Quia repellat tempora facilis quasi similique
-            ab possimus sed totam, eius architecto quas suscipit delectus
-            laborum modi, ex enim assumenda molestiae, nostrum obcaecati. Modi
-            maiores ipsum vero eaque cupiditate.
+          <p className="mt-[1rem] md:m-0 ">
+            Fast-forward to the present, I hold a BSc in Computing Science.
+            During my university days, I worked on various projects and honed my
+            skill set, enabling me to effectively plan, test and design
+            accessible solutions with ease or change approaches if needed.
           </p>
         </div>
       </div>

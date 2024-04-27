@@ -9,38 +9,36 @@ const projectsList = [
   {
     name: "Pokedex",
     description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority ",
-    github: "https://www.youtube.com/watch?v=pEskP0ulPlA",
-    demo: "https://www.youtube.com/watch?v=pEskP0ulPlA",
-    src: "https://images.unsplash.com/photo-1713245294954-c5805efcd5da?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["React", "CSS", "Vite", "Api"],
+      "React.js web app that fetches all the Pokemon data and displays it in a friendly way. You can search for a specific Pokemon, or you can sort them by type, region or name.",
+    github: "https://github.com/trstefan/react-pokedex",
+    demo: "https://react-pokedex-peach-nine.vercel.app/",
+    src: "pokemon.jpg",
+    tags: ["React", "Axios", "CSS"],
   },
   {
-    name: "Pokedex2",
+    name: "Rick and Morty",
     description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority ",
-    github: "https://www.youtube.com/watch?v=pEskP0ulPlA",
-    demo: "https://www.youtube.com/watch?v=pEskP0ulPlA",
-    src: "https://images.unsplash.com/photo-1713245294954-c5805efcd5da?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["React", "CSS", "Vite", "Api"],
+      "React.js web app that displays details of characters from the Rick and Morty show, details about the episodes and locations of the tv series",
+    github: "https://github.com/trstefan/rick-and-mortyapi",
+    demo: "https://rick-and-mortyapi.vercel.app/",
+    src: "rickandmorty.jpg",
+    tags: ["React", "Axios", "TailwindCSS"],
   },
   {
-    name: "Pokedex3",
-    description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority ",
-    github: "https://www.youtube.com/watch?v=pEskP0ulPlA",
-    demo: "https://www.youtube.com/watch?v=pEskP0ulPlA",
-    src: "https://images.unsplash.com/photo-1713245294954-c5805efcd5da?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["React", "CSS", "Vite", "Api"],
+    name: "VS Code themed Portoflio",
+    description: "First iteration of my personal website built with Next.js ",
+    github: "https://github.com/trstefan/portfolio",
+    demo: "https://stportfolio.vercel.app/",
+    src: "port.jpg",
+    tags: ["Next.js", "CSS", "NotionAPI"],
   },
   {
-    name: "Pokedex4",
-    description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority sadad asdasd asdas asdasd asdasd asdasd ",
-    github: "https://www.youtube.com/watch?v=pEskP0ulPlA",
-    demo: "https://www.youtube.com/watch?v=pEskP0ulPlA",
-    src: "https://images.unsplash.com/photo-1713245294954-c5805efcd5da?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["React", "CSS", "Vite", "Api"],
+    name: "HTML-CSS-JS snippets",
+    description: "Code snippets built only with basic technologies. ",
+    github: "https://github.com/trstefan/html-css-js-snippets",
+    demo: "https://trstefan.github.io/html-css-js-snippets/",
+    src: "htmlcssjs.jpg",
+    tags: ["HTML", "CSS", "JS"],
   },
 ];
 
@@ -60,7 +58,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
         <Image
           alt="Card background"
           className="object-cover rounded-xl"
-          src={project.src}
+          src={`/projects/${project.src}`}
         />
       </CardBody>
       <CardHeader className="pb-0 pt-2 px-3 flex flex-col items-start">
@@ -68,8 +66,14 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           <div className="flex items-center justify-between">
             <h4 className="font-bold text-xl mb-[1rem]">{project.name}</h4>
             <div className="flex gap-2">
-              <FaGithub className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 md:text-4xl text-2xl dark:hover:text-blue-700" />
-              <BiWorld className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 md:text-4xl text-2xl dark:hover:text-blue-700" />
+              <Link href={project.github}>
+                {" "}
+                <FaGithub className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 md:text-4xl text-2xl dark:hover:text-blue-700" />
+              </Link>
+              <Link href={project.demo}>
+                {" "}
+                <BiWorld className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 md:text-4xl text-2xl dark:hover:text-blue-700" />
+              </Link>
             </div>
           </div>
           <p className="font-semibold font-text mb-[1rem]">
@@ -94,8 +98,8 @@ const Work = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <section>
       <div ref={ref} className="md:px-[10rem] p-[2rem]">
-        <h1 className="text-4xl font-bold font-header">WORK SNIPPETS</h1>
-        <p className="text-2xl fonrt-semibold font-text">
+        <h1 className="text-4xl font-bold font-header">Project Showcase</h1>
+        <p className="text-2xl font-semibold font-text">
           Glimpses into some of my projects{" "}
         </p>
       </div>

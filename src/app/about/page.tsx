@@ -4,30 +4,30 @@ export default function About() {
   return (
     <div className="p-[2rem] ">
       <h1 className="text-2xl font-bold mb-[2rem] font-header">About Me</h1>
-      <div className="mb-[1rem] p-[2rem] rounded-2xl bg-[#EDF1FA] dark:bg-[#1D2333]  p-4 shadow-md shadow-black dark:shadow-[#1d4ed8]  md:w-3/5">
+      <div className="mb-[1rem] p-[2rem] rounded-2xl bg-[#EDF1FA] dark:bg-[#1D2333] shadow-md shadow-black dark:shadow-[#1d4ed8]  md:w-3/5">
         <h1 className="text-2xl font-bold font-header">WHO ARE YOU?</h1>
         <p className="font-semibold font-text">
-          Hello there! I am x, a web developer who grew up with the internet. I
-          love crafting things that people can use and enjoy online.
+          Hello there! I&apos;m Stef, a web developer who grew up with the
+          internet. I love crafting things that people can use and enjoy online.
         </p>
       </div>
-      <div className="mb-[1rem] p-[2rem] rounded-2xl bg-[#EDF1FA] dark:bg-[#1D2333]  p-4 shadow-md shadow-black dark:shadow-[#1d4ed8]  md:w-3/5">
+      <div className="mb-[1rem] p-[2rem] rounded-2xl bg-[#EDF1FA] dark:bg-[#1D2333]   shadow-md shadow-black dark:shadow-[#1d4ed8]  md:w-3/5">
         <h1 className="text-2xl font-bold font-header">
           WHAT DO YOU DO PROFESSIONALLY?
         </h1>
         <p className="mb-[1rem] font-semibold font-text">
           The internet is my playground, and I love building websites and apps
           that are born and live there. I specialize in creating the visual side
-          of things and making sure it is easy and enjoyable to use, but I am
-          also versed in some back-end functionalities to make sure everything
-          runs smoothly.
+          of things and making sure it is easy and enjoyable to use, but
+          I&apos;m also versed in some back-end functionalities to make sure
+          everything runs smoothly.
         </p>
         <p className="font-semibold font-text">
           Think of me as your digital sidekick, turning problems into simple,
           beautiful, and accessible designs that anyone can use!
         </p>
       </div>
-      <div className="mb-[1rem] p-[2rem] rounded-2xl bg-[#EDF1FA] dark:bg-[#1D2333]  p-4 shadow-md shadow-black dark:shadow-[#1d4ed8]  md:w-3/5">
+      <div className="mb-[1rem] p-[2rem] rounded-2xl bg-[#EDF1FA] dark:bg-[#1D2333]   shadow-md shadow-black dark:shadow-[#1d4ed8]  md:w-3/5">
         <h1 className="text-2xl font-bold font-header">WHAT MAKES YOU TICK?</h1>
         <p className="mb-[1rem] font-semibold font-text">
           Challenges I can rise up to.
@@ -36,14 +36,14 @@ export default function About() {
           I want to do good in the world. I do not feel I have yet.
         </p>
         <p className="font-semibold font-text">
-          I am passionate about all kinds of projects, but the ones that truly
-          energize me are those that make a positive impact. This passion fuels
-          my love for creating software that helps others by making their lives
-          easier, apps that brighten your day, and websites that promote equal
-          rights.
+          I&apos;m passionate about all kinds of projects, but the ones that
+          truly energize me are those that make a positive impact. This passion
+          fuels my love for creating software that helps others by making their
+          lives easier, apps that brighten your day, and websites that promote
+          equal rights.
         </p>
       </div>
-      <div className="mb-[1rem] p-[2rem] rounded-2xl bg-[#EDF1FA] dark:bg-[#1D2333]  p-4 shadow-md shadow-black dark:shadow-[#1d4ed8]  md:w-3/5">
+      <div className="mb-[1rem] p-[2rem] rounded-2xl bg-[#EDF1FA] dark:bg-[#1D2333]   shadow-md shadow-black dark:shadow-[#1d4ed8]  md:w-3/5">
         <h1 className="text-2xl font-bold font-header">WHAT ELSE?</h1>
         <p className="mb-[1rem] font-semibold font-text">
           Currently working on writing better React code and learning Go and

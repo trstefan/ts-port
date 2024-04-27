@@ -31,9 +31,9 @@ export default function Home() {
       <header className="md:px-[10rem] p-[2rem] md:h-[600px] w-full flex justify-center flex-col">
         <div className="items-center flex">
           <h1 className="text-4xl font-bold text-left font-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            odit amet officia vero beatae blanditiis itaque facilis nihil
-            laudantium corrupti?
+            Salut! Hello! Ol&aacute; ! I&apos;m Stef, a front end software
+            engineer 👨‍💻 focused on crafting simple, accessible and performant
+            experiences on the web
           </h1>
         </div>
         <div className="flex gap-2 mt-[1rem]">

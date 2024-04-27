@@ -8,13 +8,22 @@ export const Footer = () => {
     <footer className="sticky md:static bottom-0 left-0 z-20 w-full p-4   bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-[#020817] dark:border-gray-600">
       <div className="flex flex-col gap-2 md:flex-row md:text-lg text-sm">
         <span className=" text-black  dark:text-white font-text font-semibold">
-          © 2024 ST
+          © 2024 Stefan Traciu
         </span>
         <div className="mt-[0.5rem] md:mt-0 flex gap-2 md:hidden ">
-          <FaGithub className="h-8 w-4 text-black dark:text-white hover:cursor-pointer hover:text-blue-700 dark:hover:text-blue-700" />
-          <FaCodepen className="h-8 w-4 text-black dark:text-white hover:cursor-pointer hover:text-blue-700 dark:hover:text-blue-700" />
-          <FaAddressBook className="h-8 w-4 text-black dark:text-white hover:cursor-pointer hover:text-blue-700 dark:hover:text-blue-700" />
-          <IoMail className="h-8 w-4 text-black dark:text-white hover:cursor-pointer hover:text-blue-700 dark:hover:text-blue-700" />
+          <Link href="https://github.com/trstefan">
+            {" "}
+            <FaGithub className="h-8 w-4 text-black dark:text-white hover:cursor-pointer hover:text-blue-700 dark:hover:text-blue-700" />
+          </Link>
+          <Link href="https://codepen.io/trstefan">
+            <FaCodepen className="h-8 w-4 text-black dark:text-white hover:cursor-pointer hover:text-blue-700 dark:hover:text-blue-700" />
+          </Link>
+          <Link href="https://read.cv/trstef">
+            <FaAddressBook className="h-8 w-4 text-black dark:text-white hover:cursor-pointer hover:text-blue-700 dark:hover:text-blue-700" />
+          </Link>
+          <Link href="mailto:stefantraciu20@.gmail">
+            <IoMail className="h-8 w-4 text-black dark:text-white hover:cursor-pointer hover:text-blue-700 dark:hover:text-blue-700" />
+          </Link>
         </div>
       </div>
       <ul className="flex flex-wrap items-center mt-3 md:text-lg text-sm font-medium text-black dark:text-white sm:mt-0">
