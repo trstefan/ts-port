@@ -2,9 +2,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
-import Image from "next/image";
-
 import styles from "./style.module.css";
+import Link from "next/link";
 
 const scaleAnimation = {
   initial: { scale: 0, x: "-50%", y: "-50%" },
@@ -26,31 +25,49 @@ const scaleAnimation = {
 
 const projects = [
   {
-    title: "Project 1",
-    src: "https://images.unsplash.com/photo-1713245294954-c5805efcd5da?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    color: "#000000",
-    tags: ["React", "CSS", "Vite", "Api"],
+    title: "Pokedex",
+    src: "pokemon.jpg",
+    color: "#29339B",
+    tags: ["React", "CSS", "Vite", "PokéAPI"],
+    demo: "https://react-pokedex-peach-nine.vercel.app",
   },
 
   {
-    title: "Project 2",
-    src: "https://images.unsplash.com/photo-1713245294954-c5805efcd5da?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    color: "#8C8C8C",
-    tags: ["React", "CSS", "Vite", "Api"],
+    title: "Rick And Morty Wiki",
+    src: "rickandmorty.jpg",
+    color: "#FF3A20",
+    tags: ["React", "CSS", "Rick and Morty API"],
+    demo: "https://rick-and-mortyapi.vercel.app/",
   },
 
   {
-    title: "Project 3",
-    src: "https://images.unsplash.com/photo-1713245294954-c5805efcd5da?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    color: "#EFE8D3",
-    tags: ["React", "CSS", "Vite", "Api"],
+    title: "VS Code Portoflio",
+    src: "portfolio.jpg",
+    color: "#CAF7E2",
+    tags: ["Next.js", "CSS Modules", "NotionAPI", "Vercel"],
+    demo: "https://stportfolio.vercel.app/",
   },
 
   {
-    title: "Project 4",
-    src: "https://images.unsplash.com/photo-1713245294954-c5805efcd5da?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    color: "#706D63",
-    tags: ["React", "CSS", "Vite", "Api"],
+    title: "HTML-CSS-JS snippets",
+    src: "htmljscss.jpg",
+    color: "#A53860    ",
+    tags: ["HTML", "CSS", "Javascript"],
+    demo: "https://trstefan.github.io/html-css-js-snippets/",
+  },
+  {
+    title: "Frontend Mentor Tracker",
+    src: "fmt.jpg",
+    color: "#832161",
+    tags: ["HTML", "CSS", "Javascript"],
+    demo: "https://trstefan.github.io/frontendmentortracker/",
+  },
+  {
+    title: "Sticky Notes",
+    src: "notes.jpg",
+    color: "#F49D37",
+    tags: ["React", "CSS"],
+    demo: "https://trstefan.github.io/react-notes/",
   },
 ];
 
@@ -58,6 +75,7 @@ interface Project {
   title: string;
   src: string;
   color: string;
+  demo: string;
   tags: string[];
 }
 
@@ -137,7 +155,12 @@ const Modal: React.FC<{
                 style={{ backgroundColor: color }}
                 key={`modal_${index}`}
               >
-                <img src={src} width={300} height={200} alt="image" />
+                <img
+                  src={`/projects/${project.src}`}
+                  width={300}
+                  height={200}
+                  alt="image"
+                />
               </div>
             );
           })}
@@ -182,7 +205,10 @@ const ProjectCard: React.FC<{
       }}
       className={styles.project}
     >
-      <h2 className="font-[60px] m-0 font-normal	">{project.title}</h2>
+      <Link href={project.demo}>
+        <h2 className=" m-0 font-normal	">{project.title}</h2>
+      </Link>
+
       <p>
         {project.tags.map((tag) => (
           <span key={tag} className="font-bold font-text mr-2">
@@ -201,10 +227,10 @@ const Projects: React.FC = () => {
     <div className="p-[2rem] flex flex-col">
       <div className="md:mb-[10rem]">
         {" "}
-        <h1 className="text-2xl font-bold font-text ">Projects</h1>
+        <h1 className="text-2xl font-bold font-header">Projects</h1>
       </div>
 
-      <main className={styles.main}>
+      <div className={styles.main}>
         <div className={styles.body}>
           {projects.map((project, index) => {
             return (
@@ -218,7 +244,7 @@ const Projects: React.FC = () => {
           })}
         </div>
         <Modal modal={modal} projects={projects} />
-      </main>
+      </div>
     </div>
   );
 };
