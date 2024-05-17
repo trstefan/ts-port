@@ -16,7 +16,7 @@ export default function NavApp() {
     <Navbar className="md:px-[10rem] px-4 py-2">
       <NavbarBrand>
         <Link href="/">
-          <Image src={`logo.svg`} width="64" height="64" />
+          <Image src={`logo.svg`} width="64" height="64" alt="logo" />
         </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">

@@ -67,6 +67,7 @@ export const FloatingNav = ({
             className={cn(
               "relative font-text font-extrabold dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-blue-700 hover:text-blue-700"
             )}
+            aria-label="visit page"
           >
             <span className="block sm:hidden">{navItem.icon}</span>
             <span className="hidden sm:block text-sm">{navItem.name}</span>

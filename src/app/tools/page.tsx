@@ -62,7 +62,13 @@ const tools = [
 
 export default function Tools() {
   return (
-    <div className="p-[2rem]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      className="p-[2rem]"
+    >
       <h1 className="text-2xl font-bold mb-[1.5rem] font-header">Tools</h1>
       <h2 className="text-xl font-semibold mb-[1rem] font-text">
         Some of the technologies I use — and often rely on.
@@ -94,6 +100,6 @@ export default function Tools() {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -64,13 +64,13 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
       <CardHeader className="pb-0 pt-2 px-3 flex flex-col items-start">
         <div className="w-full">
           <div className="flex items-center justify-between">
-            <h4 className="font-bold text-xl mb-[1rem]">{project.name}</h4>
+            <p className="font-bold text-xl mb-[1rem]">{project.name}</p>
             <div className="flex gap-2">
-              <Link href={project.github}>
+              <Link href={project.github} aria-label="githublink">
                 {" "}
                 <FaGithub className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 md:text-4xl text-2xl dark:hover:text-blue-700" />
               </Link>
-              <Link href={project.demo}>
+              <Link href={project.demo} aria-label="demo">
                 {" "}
                 <BiWorld className="text-black dark:text-white hover:cursor-pointer hover:text-blue-700 md:text-4xl text-2xl dark:hover:text-blue-700" />
               </Link>

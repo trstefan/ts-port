@@ -9,7 +9,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
       className="md:px-[10rem] p-[2rem] bg-[#EDF1FA] dark:bg-[#1D2333]"
     >
       <h1 className="text-4xl font-bold mb-[2rem] font-header">My Story</h1>
-      <div className="flex flex-col md:flex-row gap-4 mb-2 text-[#04052F] dark:text-[#E8E8FD] font-bold font-text">
+      <div className="flex flex-col md:flex-row gap-4 mb-2 text-[#04052F] dark:text-[#E8E8FD]  font-semibold font-text">
         <div>
           <p>
             Hello! I&apos;m Stefan, but you can call me Stef and I have a

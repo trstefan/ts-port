@@ -11,17 +11,17 @@ export const Footer = () => {
           © 2024 Stefan Traciu
         </span>
         <div className="mt-[0.5rem] md:mt-0 flex gap-2 md:hidden ">
-          <Link href="https://github.com/trstefan">
+          <Link href="https://github.com/trstefan" aria-label="github">
             {" "}
             <FaGithub className="h-8 w-4 text-black dark:text-white hover:cursor-pointer hover:text-blue-700 dark:hover:text-blue-700" />
           </Link>
-          <Link href="https://codepen.io/trstefan">
+          <Link href="https://codepen.io/trstefan" aria-label="codepen">
             <FaCodepen className="h-8 w-4 text-black dark:text-white hover:cursor-pointer hover:text-blue-700 dark:hover:text-blue-700" />
           </Link>
-          <Link href="https://read.cv/trstef">
+          <Link href="https://read.cv/trstef" aria-label="cv">
             <FaAddressBook className="h-8 w-4 text-black dark:text-white hover:cursor-pointer hover:text-blue-700 dark:hover:text-blue-700" />
           </Link>
-          <Link href="mailto:stefantraciu20@.gmail">
+          <Link href="mailto:stefantraciu20@.gmail" aria-label="mail">
             <IoMail className="h-8 w-4 text-black dark:text-white hover:cursor-pointer hover:text-blue-700 dark:hover:text-blue-700" />
           </Link>
         </div>

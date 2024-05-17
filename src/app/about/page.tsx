@@ -1,8 +1,16 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="p-[2rem] ">
+    <motion.div
+      className="p-[2rem]"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <h1 className="text-2xl font-bold mb-[2rem] font-header">About Me</h1>
       <div className="mb-[1rem] p-[2rem] rounded-2xl bg-[#EDF1FA] dark:bg-[#1D2333] shadow-md shadow-black dark:shadow-[#1d4ed8]  md:w-3/5">
         <h1 className="text-2xl font-bold font-header">WHO ARE YOU?</h1>
@@ -61,6 +69,6 @@ export default function About() {
           games, I like those too.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }

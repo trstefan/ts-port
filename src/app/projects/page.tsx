@@ -224,7 +224,13 @@ const Projects: React.FC = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
 
   return (
-    <div className="p-[2rem] flex flex-col">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      className="p-[2rem] flex flex-col"
+    >
       <div className="md:mb-[10rem]">
         {" "}
         <h1 className="text-2xl font-bold font-header">Projects</h1>
@@ -245,7 +251,7 @@ const Projects: React.FC = () => {
         </div>
         <Modal modal={modal} projects={projects} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

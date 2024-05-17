@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
