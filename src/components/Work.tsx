@@ -25,20 +25,21 @@ const projectsList = [
     tags: ["React", "Axios", "TailwindCSS"],
   },
   {
-    name: "VS Code themed Portoflio",
-    description: "First iteration of my personal website built with Next.js ",
-    github: "https://github.com/trstefan/portfolio",
-    demo: "https://stportfolio.vercel.app/",
-    src: "port.jpg",
-    tags: ["Next.js", "CSS", "NotionAPI"],
+    name: "Sleep Serenade",
+    description:
+      " Enhance Relaxation, Improve Sleep and Boost Focus with Soothing Audio ",
+    github: "https://github.com/trstefan/sleep-serenade",
+    demo: "https://sleep-serenade.vercel.app/",
+    src: "sleepserenade.webp",
+    tags: ["Typescript", "NextJS", "TailwindCSS"],
   },
   {
-    name: "HTML-CSS-JS snippets",
-    description: "Code snippets built only with basic technologies. ",
-    github: "https://github.com/trstefan/html-css-js-snippets",
-    demo: "https://trstefan.github.io/html-css-js-snippets/",
-    src: "htmlcssjs.jpg",
-    tags: ["HTML", "CSS", "JS"],
+    name: "Portoflio",
+    description: "Current iteration of my personal website",
+    github: "https://github.com/trstefan/ts-port",
+    demo: "https://tstefan.vercel.app/",
+    src: "port.jpg",
+    tags: ["Typescript", "NextJS", "TailwindCSS", "Framer Motion"],
   },
 ];
 

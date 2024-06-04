@@ -25,11 +25,25 @@ const scaleAnimation = {
 
 const projects = [
   {
+    title: "Portoflio",
+    demo: "https://tstefan.vercel.app/",
+    color: "#b8c6b3",
+    src: "port.jpg",
+    tags: ["Typescript", "NextJS", "TailwindCSS", "Framer Motion"],
+  },
+  {
     title: "Pokedex",
     src: "pokemon.jpg",
     color: "#29339B",
     tags: ["React", "CSS", "Vite", "PokéAPI"],
     demo: "https://react-pokedex-peach-nine.vercel.app",
+  },
+  {
+    title: "Sleep Serenade",
+    color: "#a7c957",
+    demo: "https://sleep-serenade.vercel.app/",
+    src: "sleepserenade.webp",
+    tags: ["Typescript", "NextJS", "TailwindCSS"],
   },
 
   {
@@ -42,7 +56,7 @@ const projects = [
 
   {
     title: "VS Code Portoflio",
-    src: "portfolio.jpg",
+    src: "vsport.jpg",
     color: "#CAF7E2",
     tags: ["Next.js", "CSS Modules", "NotionAPI", "Vercel"],
     demo: "https://stportfolio.vercel.app/",
