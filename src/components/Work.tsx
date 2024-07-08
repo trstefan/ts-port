@@ -54,7 +54,7 @@ interface Project {
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   return (
-    <Card className="md:max-w-xl  rounded-xl ">
+    <Card className="md:max-w-xl  rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
       <CardBody className="overflow-visible flex justify-center items-center">
         <Image
           alt="Card background"

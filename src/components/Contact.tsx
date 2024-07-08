@@ -6,9 +6,9 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div ref={ref} className="md:px-[10rem] p-[2rem]">
       <h1 className="text-4xl font-bold mb-[2rem] font-header">Contact</h1>
-      <p className="text-2xl  font-text">Want to get in touch?</p>
+      <p className="text-2xl font-semibold font-text">Want to get in touch?</p>
       <div className="flex items-center text-2xl mt-4 font-medium font-text">
-        <p className="">
+        <p className="font-semibold">
           {" "}
           I&apos;m currently looking for opportunies to learn and grow in the
           web development industry, my inbox is always open! If you have any
@@ -21,7 +21,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
           </span>
         </p>
       </div>
-      <p className="flex flex-col items-start md:flex-row md:flex md:items-center text-2xl  font-text mt-4">
+      <p className="flex flex-col items-start md:flex-row md:flex md:items-center text-2xl font-semibold font-text mt-4">
         {" "}
         Or follow me here
         <span className="flex gap-2 ml-0 mt-4  md:ml-8 md:mt-0">
