@@ -39,10 +39,10 @@ const projects = [
     demo: "https://react-pokedex-peach-nine.vercel.app",
   },
   {
-    title: "Sleep Serenade",
+    title: "Tranquil Tones",
     color: "#a7c957",
-    demo: "https://sleep-serenade.vercel.app/",
-    src: "sleepserenade.webp",
+    demo: "https://tranquil-tones.vercel.app/",
+    src: "tranquiltones.webp",
     tags: ["Typescript", "NextJS", "TailwindCSS"],
   },
 

@@ -25,12 +25,12 @@ const projectsList = [
     tags: ["React", "Axios", "TailwindCSS"],
   },
   {
-    name: "Sleep Serenade",
+    name: "Tranquil Tones",
     description:
       " Enhance Relaxation, Improve Sleep and Boost Focus with Soothing Audio ",
-    github: "https://github.com/trstefan/sleep-serenade",
-    demo: "https://sleep-serenade.vercel.app/",
-    src: "sleepserenade.webp",
+    github: "https://github.com/trstefan/tranquil-tones",
+    demo: "https://tranquil-tones.vercel.app/",
+    src: "tranquiltones.webp",
     tags: ["Typescript", "NextJS", "TailwindCSS"],
   },
   {
