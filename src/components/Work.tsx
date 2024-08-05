@@ -7,6 +7,25 @@ import { Button } from "./ui/button";
 
 const projectsList = [
   {
+    name: "WanderLog",
+    description:
+      "WanderLog will serve as a personal travel diary, helping me document my adventures and plan upcoming trips with ease.",
+    github: "https://github.com/trstefan/wanderlog",
+    demo: "https://wanderlog-self.vercel.app/",
+    src: "wanderlog-homepage.png",
+    tags: ["Typescript", "NextJS", "TailwindCSS", "Postgres", "Prisma"],
+  },
+  {
+    name: "Tranquil Tones",
+    description:
+      " Enhance Relaxation, Improve Sleep and Boost Focus with Soothing Audio ",
+    github: "https://github.com/trstefan/tranquil-tones",
+    demo: "https://tranquil-tones.vercel.app/",
+    src: "tranquiltones.webp",
+    tags: ["Typescript", "NextJS", "TailwindCSS"],
+  },
+
+  {
     name: "Pokedex",
     description:
       "React.js web app that fetches all the Pokemon data and displays it in a friendly way. You can search for a specific Pokemon, or you can sort them by type, region or name.",
@@ -24,23 +43,6 @@ const projectsList = [
     src: "rickandmorty.jpg",
     tags: ["React", "Axios", "TailwindCSS"],
   },
-  {
-    name: "Tranquil Tones",
-    description:
-      " Enhance Relaxation, Improve Sleep and Boost Focus with Soothing Audio ",
-    github: "https://github.com/trstefan/tranquil-tones",
-    demo: "https://tranquil-tones.vercel.app/",
-    src: "tranquiltones.webp",
-    tags: ["Typescript", "NextJS", "TailwindCSS"],
-  },
-  {
-    name: "Portoflio",
-    description: "Current iteration of my personal website",
-    github: "https://github.com/trstefan/ts-port",
-    demo: "https://tstefan.vercel.app/",
-    src: "port.jpg",
-    tags: ["Typescript", "NextJS", "TailwindCSS", "Framer Motion"],
-  },
 ];
 
 interface Project {
@@ -54,14 +56,15 @@ interface Project {
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   return (
-    <Card className="md:max-w-xl  rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+    <Card className="md:max-w-xl p-4 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
       <CardBody className="overflow-visible flex justify-center items-center">
         <Image
           alt="Card background"
-          className="object-cover rounded-xl"
+          className="object-cover w-full h-96 rounded-lg"
           src={`/projects/${project.src}`}
         />
       </CardBody>
+
       <CardHeader className="pb-0 pt-2 px-3 flex flex-col items-start">
         <div className="w-full">
           <div className="flex items-center justify-between">

@@ -32,6 +32,13 @@ const projects = [
     tags: ["Typescript", "NextJS", "TailwindCSS", "Framer Motion"],
   },
   {
+    title: "WanderLog",
+    demo: "https://wanderlog-self.vercel.app/",
+    color: "#04052e",
+    src: "wanderlog-homepage.png",
+    tags: ["Typescript", "NextJS", "TailwindCSS", "Postgres", "Prisma"],
+  },
+  {
     title: "Pokedex",
     src: "pokemon.jpg",
     color: "#29339B",
